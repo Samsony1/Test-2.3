@@ -56,9 +56,9 @@ class CardDeliveryTest {
         $(dateInputCss).sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
         $(dateInputCss).setValue(datePlusSixDays);
         $$(button).find(exactText("Запланировать")).click();
-        $(withText("Необходимо подтверждение")).waitUntil(visible, 5000);
+        $(withText("Необходимо подтверждение")).waitUntil(visible, 8000);
         $$(button).find(exactText("Перепланировать")).click();
-        $(withText("Успешно")).waitUntil(visible, 5000);
+        $(withText("Успешно")).waitUntil(visible, 8000);
     }
 }
 
